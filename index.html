@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.3" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png?v=5.1.3">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png?v=5.1.3">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png?v=5.1.3">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.3" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="人生几何">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="人生几何">
+<meta property="og:locale" content="zh-Hans">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="人生几何">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.3',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/"/>
+
+
+
+
+
+  <title>Hexo</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left 
+  page-home">
+    <div class="headband"></div>
+	
+	<a href="https://QSbai.github.io"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Hexo</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+  <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/11/22/hello-world/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="QSbai">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/11/22/hello-world/" itemprop="url">QSB的学习笔记</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-11-22T16:43:37+08:00">
+                2017-11-22
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>本笔记只是个人平时做题所遇到并解决问题所获得的，实际用处还是看个人。。。</p>
+<h3 id="划水部分"><a href="#划水部分" class="headerlink" title="划水部分"></a>划水部分</h3><pre><code class="bash">笔记部分
+</code></pre>
+<hr>
+<p>title: 关于flag的运用<br>date: 2017-11-26 19:30:54<br>updated:<br>categories:<br>permalink: </p>
+<h2 id="tags-上面一段作为样本"><a href="#tags-上面一段作为样本" class="headerlink" title="tags: 上面一段作为样本 "></a>tags: 上面一段作为样本 </h2><p>  flag按照个人理解就是一个判断某个if语句或者是循环语句是否发生的标志，一般判断if语句是否发生变化，可以用<br>flag=0，和flag=1解决，若在一般循环语句中，判断是否循环发生，也是同样的道理。但如要判断是否为第一次循环，<br>或是否其中的某一次循环，flag则可以表示为flag++。  </p>
+<hr>
+<h2 id="关于输入的循环"><a href="#关于输入的循环" class="headerlink" title=" 关于输入的循环    "></a> 关于输入的循环    </h2><p>  while(~scanf(“%d”,&amp;a)等价于while(scanf(“%d”,&amp;a)!=EOF)等价于while(scanf(“%d”,&amp;a)==1),约等于while(scanf(“%d”,&amp;a),a)但值得注意的是，while(scanf(“%d”,&amp;a),a)其返回值是0；即输入0立即结束，输入面较其他几种较低，而while(scanf(“%d”,&amp;a)==1)其返回值为1，但因为前面定义输入是整数型，若输入字符则会结束，所以目前较为合适的应用应为前两种。个人推荐第一种，字少。。。<br>  ps:循环输入字符数组时，用while（gets（X）！=NULL）； </p>
+<hr>
+<h2 id="做题最简单的一些坑"><a href="#做题最简单的一些坑" class="headerlink" title=" 做题最简单的一些坑  "></a> 做题最简单的一些坑  </h2><p>判断或者循环里的判断，“=”与“==”一个符号差距就是个人心理崩不崩溃的问题，一般输出表现为，单个数值的溢出，多组输出<br>定义char，char被空格吃了，这种在输入里的问题最难发现，但是也是最好解决的，比如scanf(“%c%c”,&amp;a,&amp;b)只要在输入里不偷懒，直接在两个%c之间加空格就行了。<br>关于一些其他的坑，后续继续补充。。。</p>
+<pre><code class="bash">进度报告（2）
+</code></pre>
+<p>补坑补坑补坑。。。。然后预习预习预习。。。。<img src="hello-world/1.jpg" alt="预习预习预习">然后刷题刷题刷题。。。。日常操作。<br>杭电的题目的刷题心得都在楼上，我就不多说什么了。<br>学到了函数，暂时还没补完坑。<br>ps：最近会忙一点，进度可能还要慢。 </p>
+<pre><code class="bash">实验报告（3）
+</code></pre>
+<p>  近日学完了函数，关于函数部分问题；<br>  首先，关于自己定义的函数，如果是有参函数，且参数是数组，不能直接定义为，int/void XX（int a[XX]）或者int/void XX（int a），而应该定义为int/void XX（int a[]）;其其次，在主函数或者是其他函数中调用此函数（有参）时，并不需要声明，可以，直接XX（参数），而如果在之前画蛇添足的加一个int XX；则会报错；对于无参函数，直接引用即可。<br>  关于函数的递归，即分级处理，把原本用一个代码可以处理的问题（当然，这串代码相当复杂，直接进行逻辑思考，可能思维会混乱），分为许多小部分（每个部分都有自己的作用）。总的来说，就是把一个复杂的大问题，分解为许多个细小的小问题来解决。  </p>
+<p>  关于一些其他方面的进度<br>  acm竞赛入门基础电子版进度依然在函数，因为此节得知识有点难以理解，而且题型也开始变的多解（个人喜欢试着用两种方法解解看，但多数时候只会用一种），这本电子书里很多细节时老师没说，和书上没有的，可以作为笔记。  </p>
+<pre><code class="bash">实验报告（4）
+</code></pre>
+<p>  关于指针的一些问题<br>  指针*p，说简单点就是门牌号，说复杂一点就是数据的地址量（ps：具体的地址可以把数值地址赋给输入量X后，用%p输出十六位地址）；用指针引用一维数组  </p>
+<h3 id="做题记录"><a href="#做题记录" class="headerlink" title="做题记录"></a>做题记录</h3>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2014/12/25/Docs/EULA/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="QSbai">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2014/12/25/Docs/EULA/" itemprop="url">未命名</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2014-12-25T04:50:18+08:00">
+                2014-12-25
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="MarkdownPad-Software-End-User-License-Agreement"><a href="#MarkdownPad-Software-End-User-License-Agreement" class="headerlink" title="MarkdownPad Software End User License Agreement"></a>MarkdownPad Software End User License Agreement</h2><blockquote>
+<p>THIS IS A LEGAL AGREEMENT. BY DOWNLOADING, INSTALLING, COPYING, SAVING ON YOUR COMPUTER, OR OTHERWISE USING THIS SOFTWARE, YOU (LICENSEE, AS DEFINED BELOW) ARE BECOMING A PARTY TO THIS AGREEMENT AND YOU ARE CONSENTING TO BE BOUND BY ALL THE TERMS AND CONDITIONS OF THIS AGREEMENT.<br>IF YOU DO NOT AGREE TO THE TERMS AND CONDITIONS OF THIS AGREEMENT, YOU SHOULD NOT DOWNLOAD, INSTALL AND USE THE SOFTWARE.</p>
+</blockquote>
+<h3 id="1-PARTIES"><a href="#1-PARTIES" class="headerlink" title="1. PARTIES"></a>1. PARTIES</h3><p>(a) “Licensor” means Apricity Software LLC, having its principal place of business at Eden Prairie, Minnesota, USA, registered with the Minnesota Secretary of State, Minnesota Statute 322B, File Number 645753100020.   </p>
+<p>(b) “Licensee” means the individual specified in the License Certificate.</p>
+<h3 id="2-DEFINITIONS"><a href="#2-DEFINITIONS" class="headerlink" title="2. DEFINITIONS"></a>2. DEFINITIONS</h3><p>(a) “Client” means a computer device used by Licensee for running Software.   </p>
+<p>(b) “License Certificate” means evidence of a license provided by Licensor to Licensee in electronic or printed form.   </p>
+<p>(c) “License Key” means a unique key-code that enables using Software. Only Licensor and/or its representatives are permitted to produce License Keys for Software. </p>
+<p>(d) “Software” means software program known as MarkdownPad in binary form, including its documentation, upgrades, and any third party software programs that are owned and licensed pursuant to Section 5 of this Agreement by parties other than Licensor and that either integrated with or made part of MarkdownPad (collectively, “Third Party Software”).</p>
+<h3 id="3-OWNERSHIP"><a href="#3-OWNERSHIP" class="headerlink" title="3. OWNERSHIP"></a>3. OWNERSHIP</h3><p>(a) Software is the property of Licensor or its suppliers. Software is licensed, not sold. Title and copyrights to Software, in whole and in part and all copies thereof, and all modifications, enhancements, derivatives and other alterations of Software regardless of who made any modifications, if any, are, and will remain, the sole and exclusive property of Licensor and its suppliers.   </p>
+<p>(b) Software is protected by United States Copyright Law and International Treaty provisions. Further, the structure, organization, and code embodied in Software are the valuable and confidential trade secrets of Licensor and its suppliers and are protected by intellectual property laws and treaties. Licensee agrees to abide by the copyright law and all other applicable laws of the United States including, but not limited to, export control laws.</p>
+<h3 id="4-GRANT-OF-LICENSE"><a href="#4-GRANT-OF-LICENSE" class="headerlink" title="4. GRANT OF LICENSE"></a>4. GRANT OF LICENSE</h3><p>Subject to the terms, conditions, and limitations set forth in this Agreement, including any amendments thereto, Licensor hereby grants to Licensee a limited, non-exclusive, non-transferable license to use Software as follows:</p>
+<p>(a) Licensee may:   </p>
+<p>(i) install and use the licensed edition and version of Software specified in License Certificate on any number of Clients and on any operating system supported by Software, provided that a number of Software instances run by Licensee concurrently never exceeds the number of License Keys specified in License Certificate;   </p>
+<p>(ii) make one back-up copy of Software solely for archival purposes.  </p>
+<p>(b) Licensee may not:   </p>
+<p>(i) sell, redistribute, encumber, give, lend, rent, lease, sublicense, or otherwise transfer Software, or any portions of Software, to anyone without the prior written consent of Licensor;</p>
+<p>(ii) reverse-engineer, decompile, disassemble, modify, translate, make any attempt to discover the source code of Software, or create derivative works from Software, or;</p>
+<p>(iii) use the same License Key concurrently on multiple Software instances or Clients.</p>
+<h3 id="5-THIRD-PARTY-SOFTWARE-LICENSE"><a href="#5-THIRD-PARTY-SOFTWARE-LICENSE" class="headerlink" title="5. THIRD PARTY SOFTWARE LICENSE"></a>5. THIRD PARTY SOFTWARE LICENSE</h3><p>(a)    Licensee agrees to comply with the terms and conditions contained in Third-Party Software license agreements with respect to the applicable Third-Party Software.</p>
+<p>(b)    Licensee agrees and acknowledges that Sections 7 and 8 of this Agreement shall also govern Licensee’s use of the Third-Party Software. Licensor will have no responsibility with respect to any Third Party Software, and Licensee will look solely to the licensor(s) of the Third Party Software for any remedy. Licensor claims no right in the Third Party Software, and the same is owned exclusively by the licensor(s) of the Third Party Software.</p>
+<p>(c)    LICENSOR PROVIDES NO WARRANTY, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT, WITH RESPECT TO ANY THIRD PARTY SOFTWARE.</p>
+<h3 id="6-LICENSE-FEES-AND-PAYMENTS"><a href="#6-LICENSE-FEES-AND-PAYMENTS" class="headerlink" title="6. LICENSE FEES AND PAYMENTS"></a>6. LICENSE FEES AND PAYMENTS</h3><p>Licensee shall pay to Licensor all applicable license fees and charges for using Software as set forth in an appropriate Purchase Order, invoice or other purchase documentation. Licensor may charge Licensee interest for any payment that is more than thirty (30) days past due at the rate of one and one-half percent (1.5%) per month or the highest amount allowed by law, whichever is lower.</p>
+<p>Licensor shall use commercially reasonable efforts to provide order acknowledgment information and delivery within three (3) business days for all Purchase Orders placed via internet, or within ten (10) business days of receipt for Purchase Orders placed by any other method. Licensor’s Customer Service will review and accept or decline any or all Purchase Orders, and no other person is authorized to accept Purchase Orders on behalf of Licensor.</p>
+<p>Cancelled Purchase Orders or Product configuration changes requested by Customer shall be subject to acceptance by Licensor.</p>
+<p>All sales are final. Licensor does not accept returns unless explicit written or electronic authorization is provided by an authorized representative of Licensor.</p>
+<h3 id="7-LIMITED-WARRANTY"><a href="#7-LIMITED-WARRANTY" class="headerlink" title="7. LIMITED WARRANTY"></a>7. LIMITED WARRANTY</h3><p>SOFTWARE IS PROVIDED TO LICENSEE “AS IS” AND WITHOUT WARRANTIES. LICENSOR MAKES NO WARRANTY AS TO ITS USE OR PERFORMANCE. TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, LICENSOR, AND ITS AFFILIATES, SUPPLIERS AND RESELLERS, DISCLAIM ALL OTHER WARRANTIES AND CONDITIONS, EITHER EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT, WITH REGARD TO SOFTWARE, AND THE PROVISION OF OR FAILURE TO PROVIDE SUPPORT SERVICES. </p>
+<h3 id="8-DISCLAIMER-OF-DAMAGES"><a href="#8-DISCLAIMER-OF-DAMAGES" class="headerlink" title="8. DISCLAIMER OF DAMAGES"></a>8. DISCLAIMER OF DAMAGES</h3><p>(a)    TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT WILL LICENSOR OR ITS AFFILIATES, LICENSORS, SUPPLIERS OR RESELLERS BE LIABLE TO LICENSEE UNDER ANY THEORY FOR ANY DAMAGES SUFFERED BY LICENSEE OR ANY USER OF SOFTWARE, OR FOR ANY SPECIAL, INCIDENTAL, INDIRECT, CONSEQUENTIAL, OR SIMILAR DAMAGES (INCLUDING, BUT NOT LIMITED TO, DAMAGES FOR LOSS OF PROFITS OR CONFIDENTIAL OR OTHER INFORMATION, FOR BUSINESS INTERRUPTION, FOR PERSONAL INJURY, FOR LOSS OF PRIVACY, FOR FAILURE TO MEET ANY DUTY INCLUDING OF GOOD FAITH OR OF REASONABLE CARE, FOR NEGLIGENCE, AND FOR ANY OTHER PECUNIARY OR OTHER LOSS WHATSOEVER) ARISING OUT OF THE USE OR INABILITY TO USE SOFTWARE, OR THE PROVISION OF OR FAILURE TO PROVIDE SUPPORT SERVICES, EVEN IF LICENSOR HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES, AND REGARDLESS OF THE LEGAL OR EQUITABLE THEORY (CONTRACT, TORT OR OTHERWISE) UPON WHICH THE CLAIM IS BASED.</p>
+<p>(b)    IN ANY CASE, LICENSOR’S ENTIRE LIABILITY UNDER ANY PROVISION OF THIS AGREEMENT WILL BE LIMITED TO THE AMOUNT ACTUALLY PAID BY LICENSEE FOR SOFTWARE UNDER THIS AGREEMENT. </p>
+<h3 id="9-EXPORT-REGULATIONS"><a href="#9-EXPORT-REGULATIONS" class="headerlink" title="9. EXPORT REGULATIONS"></a>9. EXPORT REGULATIONS</h3><p>Licensee agrees and accepts that Software may be subject to import and export laws of any country, including those of the European Union and United States (specifically the Export Administration Regulations (EAR)). Licensee acknowledges that it is not a citizen, national, or resident of, and is not under control of the governments of Cuba, Iran, North Korea, Sudan or Syria and is not otherwise a restricted end-user as defined by applicable export control laws. Further, Licensee acknowledges that it will not download or otherwise export or re-export Software or any related technical data directly or indirectly to the above-mentioned countries or to citizens, nationals, or residents of those countries, or to any other restricted end user or for any restricted end-use.</p>
+<h3 id="10-TERM-AND-TERMINATION"><a href="#10-TERM-AND-TERMINATION" class="headerlink" title="10. TERM AND TERMINATION"></a>10. TERM AND TERMINATION</h3><p>(a) Except as otherwise provided in License Certificate, the license granted herein shall be perpetual.</p>
+<p>(b) If Licensee fails to comply with the terms and conditions of this Agreement, this Agreement and Licensee’s right and license to use Software will terminate immediately. Licensee may terminate this Agreement at any time by notifying Licensor. Upon the termination of this Agreement, Licensee must cease using Software and delete Software from its Clients and archives.</p>
+<p>LICENSEE AGREES THAT UPON TERMINATION OF THIS AGREEMENT FOR ANY REASON, LICENSOR MAY TAKE ACTIONS SO THAT SOFTWARE NO LONGER OPERATES.</p>
+<h3 id="11-GENERAL"><a href="#11-GENERAL" class="headerlink" title="11. GENERAL"></a>11. GENERAL</h3><p>(a) Licensor reserves the right at any time to cease the support of Software and to alter prices, features, specifications, capabilities, functions, licensing terms, release dates, general availability or other characteristics of Software.</p>
+<p>(b) This Agreement, including the Third Party Software license agreements, constitutes the entire agreement between the parties concerning Licensee’s use of Software, and supersedes any and all prior or contemporaneous oral or written representations, communications, or advertising with respect to Software. No purchase order, other ordering document or any hand written or typewritten text which purports to modify or supplement the printed text of this Agreement or any schedule will add to or vary the terms of this Agreement unless signed by both Licensee and Licensor.</p>
+<p>(c) A waiver by either party of any term or condition of this Agreement or any breach thereof, in any one instance, will not waive such term or condition or any subsequent breach. The provisions of this Agreement which require or contemplate performance after the expiration or termination of this Agreement will be enforceable notwithstanding said expiration or termination.</p>
+<p>(d) This Agreement will be governed by the laws of the United States of America, without reference to conflict of laws principles. Licensee agrees that any litigation relating to this Agreement may only be brought in, and will be subject to the jurisdiction of, any Court of the United States of America.</p>
+<p>(e) Titles are inserted for convenience only and will not affect in any way the meaning or interpretation of this Agreement. If any provision of this Agreement is held invalid, the remainder of this Agreement will continue in full force and effect. Either Licensor or Licensee may assign this Agreement in the case of a merger or sale of substantially all of its respective assets to another entity. This Agreement will be binding upon and will inure to the benefit of the parties, their successors and assigns.</p>
+<p>For questions about this Agreement, please contact Licensor at <a href="&#x6d;&#97;&#105;&#108;&#116;&#x6f;&#x3a;&#x73;&#97;&#x6c;&#101;&#115;&#64;&#x6d;&#97;&#x72;&#107;&#x64;&#x6f;&#119;&#x6e;&#x70;&#97;&#100;&#x2e;&#99;&#x6f;&#x6d;">&#x73;&#97;&#x6c;&#101;&#115;&#64;&#x6d;&#97;&#x72;&#107;&#x64;&#x6f;&#119;&#x6e;&#x70;&#97;&#100;&#x2e;&#99;&#x6f;&#x6d;</a>.</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+  </section>
+
+  
+
+
+          </div>
+          
+
+
+          
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">QSbai</p>
+              <p class="site-description motion-element" itemprop="description">人生几何</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+
+          </nav>
+
+          
+
+          <div class="links-of-author motion-element">
+            
+          </div>
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">QSbai</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.3</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+  
+  <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.3"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.3"></script>
+
+
+
+  
+  
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.3"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+<script type="text/javascript"
+color="255,255,255" opacity='0.5' zIndex="-2" count="180" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
+
+
+</body>
+</html>
+
+<!-- 页面点击小红心 -->
+<script type="text/javascript" src="/js/src/love.js"></script>
